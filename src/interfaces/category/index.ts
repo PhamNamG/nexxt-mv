@@ -1,22 +1,26 @@
 import { ObjectId } from "bson";
+import { IProduct } from "../product";
 
 export interface Icategory {
+  time: string;
   _id?: ObjectId;
   name: string;
   linkImg?: string;
   des: string;
   sumSeri: string | number;
-  products: any;
+  products: IProduct[];
   type: string;
 }
 
 export interface isCategorysSlice {
   category: {
-    data: string[];
-    length: number;
+    data: Icategory[];
+    totalCount: number;
+    totalPages: number;
   };
   isError: boolean;
   isLoading: boolean;
   categoryNotReqId: string[];
   details: {};
+  releases?:[]
 }
