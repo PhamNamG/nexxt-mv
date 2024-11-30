@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "composite": true,
+    "useDefineForClassFields": true,
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": false,
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types"
+    ]
+  },
+  "include": [
+    "./src/**/*.ts",
+    "src/router/index.tsx",
+    "src/router/Router-Security/index.tsx",
+    "src/@types/.d.ts",
+    "src/components/Lazy/LazyComponent.tsx",
+    "src/components/Form/component/select/index.tsx",
+    "src/components/Form/index.tsx",
+    "src/components/Particles/index.tsx",
+    "src/auth/getUser.tsx",
+    "src/components/MV/Button/index.tsx",
+    "src/components/MV/Divider/index.tsx",
+    "src/components/Icon/index.tsx"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+}
